@@ -6,5 +6,5 @@ class User < ApplicationRecord
 
   has_many :jobs, dependent: :destroy
 
-  validates :name, :description, :wesbite, presence: true
+  validates :name, :description, :website, presence: true
 end
