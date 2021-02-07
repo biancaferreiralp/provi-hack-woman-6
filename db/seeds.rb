@@ -16,10 +16,10 @@ marketplace = User.create!(company_name: "Marketplace", website: "marketplace.co
                           email: "marketplace@marketplace.com", password: "123456")
 
 reactjs = Job.create!(title: "Desenvolvedora React JS", location: "Rio de Janeiro", description: "Junte-se so nosso time de front-end!", 
-                      format: "PJ", modality: "Presencial", requirements: ["HTML", "CSS/SCSS/SASS", "JavaScript", "React JS", "Redux", "Bootstrap"], user_id: User.all.first.id)
+                      format: "PJ", modality: "Presencial", requirements: ["HTML", "CSS/SCSS/SASS", "JavaScript", "React JS", "React Native", "Redux", "Bootstrap", "jQuery"], user_id: User.all.first.id)
                       
 angular = Job.create!(title: "Desenvolvedora Angular", location: "Remoto", description: "Junte-se so nosso time de front-end!", 
-                      format: "CLT", modality: "Remoto", requirements: ["HTML", "CSS/SCSS/SASS", "JavaScript", "Angular", "Redux", "jQuery"], user_id: User.all.second.id)
+                      format: "CLT", modality: "Remoto", requirements: ["HTML", "CSS/SCSS/SASS", "JavaScript", "React JS", "Redux", "Angular", "Bootstrap", "jQuery"], user_id: User.all.second.id)
 
-mobile = Job.create!(title: "Desenvolvedora Mobile", location: "Remoto", description: "Junte-se so nosso time de desenvolvimento!", 
-                     format: "PJ", modality: "Remoto", requirements: ["HTML", "CSS/SCSS/SASS", "JavaScript", "React JS", "Redux", "React Native"], user_id: User.all.third.id)
+vue = Job.create!(title: "Desenvolvedora Vue.js", location: "Remoto", description: "Junte-se so nosso time de front-end!", 
+                     format: "PJ", modality: "Remoto", requirements: ["HTML", "CSS/SCSS/SASS", "JavaScript", "Redux", "Vue.js", "Bootstrap", "jQuery"], user_id: User.all.third.id)

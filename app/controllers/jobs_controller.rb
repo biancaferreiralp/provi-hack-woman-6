@@ -2,7 +2,11 @@ class JobsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-    @jobs = Job.all
+    if params[:query].present?
+      @jobs = Job.search_by_requirements(params[:query])
+    else
+      @jobs = Job.all
+    end
   end
 
   def show

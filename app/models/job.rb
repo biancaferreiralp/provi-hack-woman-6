@@ -1,13 +1,20 @@
 class Job < ApplicationRecord
   belongs_to :user
 
+  include PgSearch::Model
+  pg_search_scope :search_by_requirements,
+    against: [ :requirements ],
+    using: {
+      tsearch: { prefix: true }
+    }
+
   REQUIREMENTS = ["HTML", "CSS/SCSS/SASS", "JavaScript", "React JS", "React Native", "Redux", "Angular", "Vue.js", "Bootstrap", "jQuery"]
   FORMAT = ["Estágio", "CLT", "PJ", "Freelance"]
   MODALITY = ["Presencial", "Remoto"]
 
   validates :title, presence: true, length: {maximum: 50}
   validates :location, :description, presence: true
-  validates :requirements, presence: :true, length: { minimum: 6}
+  validates :requirements, presence: :true, length: { minimum: 5}
   validates :format, presence: true, inclusion: { in: FORMAT }
   validates :modality, presence: true, inclusion: { in: MODALITY }
 

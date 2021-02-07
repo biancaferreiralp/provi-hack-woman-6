@@ -1,5 +1,24 @@
 <h1>Vagas</h1>
 
+<%= link_to "Adicionar vaga", new_job_path %>
+
+<%= simple_form_for :query, url: jobs_path, method: "GET" do |f| %>
+  <%= f.input :requirements, include_hidden: false, collection: Job::REQUIREMENTS, as: :check_boxes %>  
+  <%= f.submit "Search", class: "btn btn-primary" %>
+<% end %>
+
+<%= form_tag jobs_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+
+    class: "form-control",
+    placeholder: "Find a job"
+  %>
+  <%= submit_tag "Buscar vagas", class: "btn btn-primary" %>
+  <%= link_to "Limpar", jobs_path  %>
+<% end %>
+
+
 <% @jobs.each do |job| %>
   <p>
     <%= job.user.company_name %>
