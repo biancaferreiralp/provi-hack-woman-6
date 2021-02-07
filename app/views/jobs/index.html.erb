@@ -1,20 +1,216 @@
-<h1>Vagas</h1>
+<div id='background'>
+  <div class='barra' id='topo'>
+    <button class='buttonEditar'>
+      <%= link_to root_path do %>
+        <%= image_tag('arrow-left.png', id: "arrow") %>
+        <%= "Editar Habilidades" %>
+      <% end %>
+    </button>
 
-<%= link_to "Realizar nova busca", root_path %>
-<%= link_to "Ver todas as vagas", jobs_path %>
+    <%= link_to "Pronta!", root_path, class:"brand" %>
+  </div>
 
-<% @jobs.each do |job| %>
-  <p>
-    <%= job.user.company_name %>
-    <%= job.title %>
-    <%= job.location %>
-    <% job.requirements.each do |requirement| %>
-      <p>- <%= requirement %></p>
+  <div class='barra'>
+    <p>Você está pronta para se candidatar para às 6 vagas abaixo:</p>
+  </div>
+
+
+  <!-- Cards são inseridos dentro da div abaixo com ID Container -->
+  <div id='container'>
+    <!-- A partir daqui inicia a div do card-->
+
+
+
+    <% @jobs.each do |job| %>
+      <div id='box'>
+        <div class="card">
+          <div class="topo">
+            <div class='titulo'>
+              <p class='titulovaga'><%= job.title %></p>
+              <p><%= job.user.company_name %></p>
+            </div>
+          </div>
+
+          <p class='descricao'><%= job.description %></p>
+          
+          <div class='caracteristicas'>
+              <div class='caracteristica'>Pleno</div>
+              <div class='caracteristica'><%= job.format %></div>
+              <div class='caracteristica'><%= job.modality %></div>
+          </div>
+
+          <div class='buttons'>
+            <button class='buttondetalhes'>
+              <%= link_to job_path(job.id) do %>
+                <%= "Mais detalhes" %>
+              <% end %>
+            </button>
+
+            <button class='buttoncandidatar'>
+              <%= mail_to job.user.email do %>
+                <%= "Me candidatar" %>
+              <% end %>
+            </button>
+          </div>
+        </div>
+      </div>
     <% end %>
-    <%= job.format %>
-    <%= job.modality %>
 
-    <%= link_to "Saiba mais", job_path(job.id) %>
-  </p>
-  <br>
-<% end %>
+
+    <div id='box'>
+      <div class='card'>
+        <div class='topo'>
+          <%= image_tag('provi.png') %>
+          <div class='titulo'>
+              <p class='titulovaga'>Desenvolvedora Front-End Web</p>
+              <p>Provi</p>
+          </div>
+        </div>
+        <p class='descricao'>Entre os requisitos desta vaga estão HTML, front-end, JavaScript, Ensino Superior completo e Kan.</p>
+        <div class='caracteristicas'>
+            <div class='caracteristica'>Pleno</div>
+            <div class='caracteristica'>Fulltime</div>
+            <div class='caracteristica'>Remoto</div>
+        </div>
+        <div class='buttons'>
+            
+            <button class='buttondetalhes'>Mais detalhes</button>
+            <button class='buttoncandidatar'>Me candidatar</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div id='box'>
+      <div class='card'>
+        <div class='topo'>
+          <img src='../vagas/img/provi.png' > 
+          <div class='titulo'>
+              <p class='titulovaga'>Desenvolvedora Front-End Web</p>
+              <p>Provi</p>
+          </div>
+        </div>
+        <p class='descricao'>Entre os requisitos desta vaga estão HTML, front-end, JavaScript, Ensino Superior completo e Kan.</p>
+        <div class='caracteristicas'>
+            <div class='caracteristica'>Pleno</div>
+            <div class='caracteristica'>Fulltime</div>
+            <div class='caracteristica'>Remoto</div>
+        </div>
+        <div class='buttons'>
+            <button class='buttondetalhes'>Mais detalhes</button>
+            <button class='buttoncandidatar'>Me candidatar</button>
+        </div>
+      </div>
+    </div>
+<!-- Fim da div do card. Abaixo são apenas repetições do card para visualizar formatação-->
+<div id='box'>
+  <div class='card'>
+      <div class='topo'>
+          <img src='../vagas/img/boticario.jpg' > 
+          <div class='titulo'>
+              <p class='titulovaga'>Desenvolvedora Front-End</p>
+              <p>Grupo Boticário</p>
+          </div>
+      </div>
+      <p class='descricao'>Entre os requisitos desta vaga estão HTML, front-end, JavaScript, Ensino Superior completo.</p>
+          <div class='caracteristicas'>
+              <div class='caracteristica'>Júnior</div>
+              <div class='caracteristica'>São Paulo</div>
+              <div class='caracteristica'>Efetivo</div>
+          </div>
+          <div class='buttons'>
+              <button class='buttondetalhes'>Mais detalhes</button>
+              <button class='buttoncandidatar'>Me candidatar</button>
+          </div>
+  </div>
+</div>
+<div id='box'>
+  <div class='card'>
+      <div class='topo'>
+          <img src='../vagas/img/wavy.png' > 
+          <div class='titulo'>
+              <p class='titulovaga'>Desenvolvedora Full Stack</p>
+              <p>Wavy</p>
+          </div>
+      </div>
+      <p class='descricao'>Entre os requisitos desta vaga estão HTML, front-end, JavaScript, Ensino Superior completo.</p>
+          <div class='caracteristicas'>
+              <div class='caracteristica'>Pleno</div>
+              <div class='caracteristica'>Full Time</div>
+              <div class='caracteristica'>Remoto</div>
+          </div>
+          <div class='buttons'>
+              <button class='buttondetalhes'>Mais detalhes</button>
+              <button class='buttoncandidatar'>Me candidatar</button>
+          </div>
+  </div>
+</div>
+<div id='box'>
+  <div class='card'>
+      <div class='topo'>
+          <img src='../vagas/img/pagarme.png' > 
+          <div class='titulo'>
+              <p class='titulovaga'>Desenvolvedora Full Stack</p>
+              <p>Pagar.me</p>
+          </div>
+      </div>
+      <p class='descricao'>Entre os requisitos desta vaga estão HTML, front-end, JavaScript, Ensino Superior completo.</p>
+          <div class='caracteristicas'>
+              <div class='caracteristica'>Pleno</div>
+              <div class='caracteristica'>Full Time</div>
+              <div class='caracteristica'>Remoto</div>
+          </div>
+          <div class='buttons'>
+              <button class='buttondetalhes'>Mais detalhes</button>
+              <button class='buttoncandidatar'>Me candidatar</button>
+          </div>
+  </div>
+</div>
+<div id='box'>
+  <div class='card'>
+      <div class='topo'>
+          <img src='../vagas/img/credere.png' > 
+          <div class='titulo'>
+              <p class='titulovaga'>Desenvolvedora Front-End</p>
+              <p>Credere</p>
+          </div>
+      </div>
+      <p class='descricao'>Entre os requisitos desta vaga estão HTML, front-end, JavaScript, Ensino Superior completo.</p>
+          <div class='caracteristicas'>
+              <div class='caracteristica'>Junior</div>
+              <div class='caracteristica'>São Paulo</div>
+              <div class='caracteristica'>Estágio</div>
+          </div>
+          <div class='buttons'>
+              <button class='buttondetalhes'>Mais detalhes</button>
+              <button class='buttoncandidatar'>Me candidatar</button>
+          </div>
+  </div>
+</div>
+<div id='box'>
+  <div class='card'>
+      <div class='topo'>
+          <img src='../vagas/img/enjoei.jpg' > 
+          <div class='titulo'>
+              <p class='titulovaga'>Analista de E-commerce</p>
+              <p>Enjoei</p>
+          </div>
+      </div>
+      <p class='descricao'>Entre os requisitos desta vaga estão HTML, front-end, JavaScript, Ensino Superior completo e Kan.</p>
+          <div class='caracteristicas'>
+              <div class='caracteristica'>Pleno</div>
+              <div class='caracteristica'>São Paulo</div>
+              <div class='caracteristica'>Efetivo</div>
+          </div>
+          <div class='buttons'>
+              <button class='buttondetalhes'>Mais detalhes</button>
+              <button class='buttoncandidatar'>Me candidatar</button>
+          </div>
+  </div>
+</div>
+</div>
+    
+
+</div>
+
