@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Rubik;
+}
+
+/* Cor de background da página */
+#background {
+  background-color: #3D1EA8;
+}
+
+/* Início da área com título da página e botão 'editar habilidades' */
+#topo {
+  width: 69.5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+#topo a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.buttonEditar {
+  width: 140px;
+  height: 25px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  background-color: #3D1EA8;
+  border: none;
+}
+
+#arrow {
+  width: 16px;
+  height: 16px;
+}
+
+/* ------------------------------------------ */
+
+/* Início da área "Você está pronta para..." */
+.barra {
+  width: 69.5vw;
+  height: 40px;
+  display: flex;
+  margin: 103px auto 52px auto;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+}
+/* ------------------------------------------ */
+
+
+/* Container que reune todos os cards de vagas */
+#container {
+  margin: 1em 11em;
+  display: grid;
+  grid-template: 1fr 1fr / repeat(3, 1fr);
+  gap: 0.5em;
+  margin-bottom: 100px;
+}
+
+/* Container que reune todos os cards de vagas */
+#box {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+/* Div do card */
+.card {
+  width: 23vw;
+  height: 51vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Div que reune imagem, título da vaga e nome da empresa */
+.topo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Tamanho da div com título e nome da empresa */
+.titulo {
+  width: 10vw;
+  margin-left: 8px;
+}
+.titulovaga {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* Tamanho da imagem da empresa */
+img {
+  width: 88px;
+  height: 88px;
+}
+
+/* Descrição breve da vaga */
+.descricao {
+  width: 22vw;
+  margin-left: 28px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  display: flex;
+  align-self: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #858484;
+}
+
+/* Div que organiza as caracteristicas principais das vagas */
+.caracteristicas {
+  display: flex;
+  justify-content: space-evenly;
+  width: 21vw;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.caracteristica {
+  background-color: #E2DDF2;
+  border-radius: 5px;
+  text-align: center;
+  height: 35px;
+  width: 84px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+/* Div de organização dos botões */
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Button de mais detalhes */
+.buttondetalhes {
+  background-color: #E2DDF2;
+  width: 120px;
+  height: 35px;
+  border-radius: 6px;
+  font-size: 14px;
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+/* Button  "me candidatar" */
+.buttoncandidatar {
+  background-color: #3D1EA8;
+  width: 120px;
+  height: 35px;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+}
