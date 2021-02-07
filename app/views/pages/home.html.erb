@@ -1,12 +1,41 @@
 <h1>Homepage</h1>
 
-<form action="/jobs?requirements=">
+<form action="/jobs?query=">
   <fieldset>
     <legend>Marque as habilidades que você possui:</legend>
-    <input type="checkbox" name="requirements" id="ling01" value="angular">
-    <label for="ling01">Angular</label>
+
+    <input type="checkbox" name="query" id="ling01" value="html">
+    <label for="ling01">HTML</label>
+
+    <input type="checkbox" name="query" id="ling02" value="css/scss/sass">
+    <label for="ling02">CSS/SCSS/SASS</label>
+
+    <input type="checkbox" name="query" id="ling03" value="javascript">
+    <label for="ling03">JavaScript</label>
+    
+    <input type="checkbox" name="query" id="ling04" value="react js">
+    <label for="ling04">React JS</label>
+
+    <input type="checkbox" name="query" id="ling05" value="react native">
+    <label for="ling05">React Native</label>
+
+    <input type="checkbox" name="query" id="ling06" value="redux">
+    <label for="ling06">Redux</label>
+
+    <input type="checkbox" name="query" id="ling07" value="angular">
+    <label for="ling07">Angular</label>
+
+    <input type="checkbox" name="query" id="ling08" value="vue.js">
+    <label for="ling08">Vue.js</label>
+
+    <input type="checkbox" name="query" id="ling09" value="bootstrap">
+    <label for="ling09">Bootstrap</label>
+
+    <input type="checkbox" name="query" id="ling01" value="jquery">
+    <label for="ling01">jQuery</label>
   </fieldset>
+
   <input type="submit" value="Enviar">
 </form>
 
-<%= link_to "Buscar vagas", jobs_path %>
+<%= link_to "Limpar", root_path %>
