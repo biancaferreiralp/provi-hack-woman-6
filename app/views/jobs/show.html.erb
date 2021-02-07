@@ -9,4 +9,6 @@
 <%= @job.format %>
 <%= @job.modality %>
 
-<%= link_to "Ver outras vagas", jobs_path %>
+<%= mail_to @job.user.email, "Candidatar-se a vaga" %>
+
+<%= link_to "Ver mais vagas", jobs_path %>
