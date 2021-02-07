@@ -6,9 +6,7 @@ class Job < ApplicationRecord
   MODALITY = ["Presencial", "Remoto"]
 
   validates :title, presence: true, length: {maximum: 50}
-  validates :location, :description, :benefits, presence: true
-  # validates :area, presence: true
-  # validates :requirements, presence: true, inclusion: { in: REQUIREMENTS }
+  validates :location, :description, presence: true
   validates :requirements, presence: :true, length: { minimum: 6}
   validates :format, presence: true, inclusion: { in: FORMAT }
   validates :modality, presence: true, inclusion: { in: MODALITY }
