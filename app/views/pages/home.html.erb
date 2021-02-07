@@ -1,3 +1,12 @@
 <h1>Homepage</h1>
 
+<form action="/jobs?requirements=">
+  <fieldset>
+    <legend>Marque as habilidades que você possui:</legend>
+    <input type="checkbox" name="requirements" id="ling01" value="angular">
+    <label for="ling01">Angular</label>
+  </fieldset>
+  <input type="submit" value="Enviar">
+</form>
+
 <%= link_to "Buscar vagas", jobs_path %>
