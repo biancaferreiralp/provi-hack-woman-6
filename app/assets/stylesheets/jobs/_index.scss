@@ -65,7 +65,7 @@
 #container {
   margin: 1em 11em;
   display: grid;
-  grid-template: 1fr 1fr / repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 0.5em;
   margin-bottom: 100px;
 }
