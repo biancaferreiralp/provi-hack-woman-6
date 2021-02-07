@@ -1,0 +1,14 @@
+<h2><%= "Adicionar nova vaga" %></h2>
+
+<%= simple_form_for(@job) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :location %>
+  <%= f.input :description %>
+  <%= f.input :requirements, include_hidden: false, collection: Job::REQUIREMENTS, as: :check_boxes %>
+  <%= f.input :format, collection: Job::FORMAT %>
+  <%= f.input :modality, collection: Job::MODALITY %>
+  <%= f.input :benefits %>
+  <%= f.button :submit, "Publicar vaga" %>
+<% end %>
+
+<%= link_to "Voltar", jobs_path %>
