@@ -21,6 +21,7 @@
       <div id='box'>
         <div class="card">
           <div class="topo">
+            <%= cl_image_tag job.user.photo.key, crop: :fit, width: 200, height: 400 %>
             <div class='titulo'>
               <p class='titulovaga'><%= job.title %></p>
               <p><%= job.user.company_name %></p>

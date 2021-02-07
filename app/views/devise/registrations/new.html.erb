@@ -1,5 +1,7 @@
 <h2>Cadastre sua empresa</h2>
 
+<% raise %>
+
 <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
@@ -10,6 +12,8 @@
                 label: "Nome da empresa" %>
     <%= f.input :website,
                 required: true %>
+    <%= f.input :photo,
+                required: true, as: :file %>
     <%= f.input :description,
                 required: true,
                 label: "Descrição da empresa" %>
