@@ -20,7 +20,6 @@ wavy = User.create!(company_name: "Wavy", website: "wavy.com", description: "Ent
 pagar_me = User.create!(company_name: "Pagar.me", website: "pagar.me", description: "Entre os requisitos desta vaga estão HTML, CSS/SCSS/SASS, JavaScript, React JS, Redux, Bootstrap e jQuery.", 
                           email: "exemplo@pagarme.com", password: "123456")
 
-
 credere = User.create!(company_name: "Credere", website: "credere.com", description: "Entre os requisitos desta vaga estão HTML, CSS/SCSS/SASS, JavaScript, React JS, React Native, Bootstrap e jQuery.", 
                           email: "exemplo@credere.com", password: "123456")
 
