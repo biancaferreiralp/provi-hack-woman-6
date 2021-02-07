@@ -1,2 +1,12 @@
-<h1>Jobs#show</h1>
-<p>Find me in app/views/jobs/show.html.erb</p>
+<h1><%= @job.title %></h1>
+
+<%= @job.user.company_name %>
+<%= @job.location %>
+<%= @job.description %>
+<% @job.requirements.each do |requirement| %>
+  <p>- <%= requirement %></p>
+<% end %>
+<%= @job.format %>
+<%= @job.modality %>
+
+<%= link_to "Ver outras vagas", jobs_path %>

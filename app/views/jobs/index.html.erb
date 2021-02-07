@@ -1,2 +1,17 @@
-<h1>Jobs#index</h1>
-<p>Find me in app/views/jobs/index.html.erb</p>
+<h1>Vagas</h1>
+
+<% @jobs.each do |job| %>
+  <p>
+    <%= job.user.company_name %>
+    <%= job.title %>
+    <%= job.location %>
+    <% job.requirements.each do |requirement| %>
+      <p>- <%= requirement %></p>
+    <% end %>
+    <%= job.format %>
+    <%= job.modality %>
+
+    <%= link_to "Saiba mais", job_path(job.id) %>
+  </p>
+  <br>
+<% end %>
