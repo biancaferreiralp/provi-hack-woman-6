@@ -1,41 +1,83 @@
-<h1>Homepage</h1>
+<div class="pronta-wrapper">
+  <div class="logo">
+    <div>
+      <div class="principal">
+        <h1>Pronta!</h1>
+      </div>
 
-<form action="/jobs?query=">
-  <fieldset>
-    <legend>Marque as habilidades que você possui:</legend>
+      <div class="mensagem">
+        <h2>Match de habilidades</h2>
+        <h3>Conheça o seu verdadeiro <br> potencial profissional.</h3>
+      </div>
+    </div>
+  </div>
 
-    <input type="checkbox" name="query" id="ling01" value="html">
-    <label for="ling01">HTML</label>
+  <div class="busca">
+    <div class="caixa-busca">
+      <div class="texto-busca mb-5">
+        <h4>Quais são suas principais habilidades?</h4>
+        <p>Selecione ao menos 5 para melhores resultados</p>
+      </div>
 
-    <input type="checkbox" name="query" id="ling02" value="css/scss/sass">
-    <label for="ling02">CSS/SCSS/SASS</label>
+      <form action="/jobs?query=">
+        <fieldset class="pl-3 pb-4">
+          <label>
+            <input type="checkbox" name="query" id="ling01" value="html">
+            <span><label for="ling01" class="pt-2">HTML</label></span>
+          </label>
+          
+          <label>
+            <input type="checkbox" name="query" id="ling02" value="css/scss/sass">
+            <span><label for="ling02" class="pt-2">CSS/SCSS/SASS</label></span>
+          </label>
 
-    <input type="checkbox" name="query" id="ling03" value="javascript">
-    <label for="ling03">JavaScript</label>
+          <label>
+            <input type="checkbox" name="query" id="ling03" value="javascript">
+            <span><label for="ling03" class="pt-2">JavaScript</label></span>
+          </label>
 
-    <input type="checkbox" name="query" id="ling04" value="react js">
-    <label for="ling04">React JS</label>
+          <label>
+            <input type="checkbox" name="query" id="ling04" value="react js">
+            <span><label for="ling04" class="pt-2">React JS</label></span>
+          </label>
 
-    <input type="checkbox" name="query" id="ling05" value="react native">
-    <label for="ling05">React Native</label>
+          <label>
+            <input type="checkbox" name="query" id="ling05" value="react native">
+            <span><label for="ling05" class="pt-2">React Native</label></span>
+          </label>
 
-    <input type="checkbox" name="query" id="ling06" value="redux">
-    <label for="ling06">Redux</label>
+          <label>
+            <input type="checkbox" name="query" id="ling06" value="redux">
+            <span><label for="ling06" class="pt-2">Redux</label></span>
+          </label>
 
-    <input type="checkbox" name="query" id="ling07" value="angular">
-    <label for="ling07">Angular</label>
+          <br>
 
-    <input type="checkbox" name="query" id="ling08" value="vue.js">
-    <label for="ling08">Vue.js</label>
+          <label>
+            <input type="checkbox" name="query" id="ling07" value="angular">
+            <span><label for="ling07" class="pt-2">Angular</label></span>
+          </label>         
+                
+          <label>
+            <input type="checkbox" name="query" id="ling08" value="vue.js">
+            <span><label for="ling08" class="pt-2">Vue.js</label></span>
+          </label>
 
-    <input type="checkbox" name="query" id="ling09" value="bootstrap">
-    <label for="ling09">Bootstrap</label>
+          <label>
+            <input type="checkbox" name="query" id="ling09" value="bootstrap">
+            <span><label for="ling09" class="pt-2">Bootstrap</label></span>
+          </label>       
 
-    <input type="checkbox" name="query" id="ling01" value="jquery">
-    <label for="ling01">jQuery</label>
-  </fieldset>
+          <label>
+            <input type="checkbox" name="query" id="ling10" value="jquery">
+            <span><label for="ling10" class="pt-2">jQuery</label></span>
+          </label>
+        </fieldset>
 
-  <input type="submit" value="Enviar">
-</form>
-
-<%= link_to "Limpar", root_path %>
+        <div class="botao pt-5">
+          <input type="submit" value="Buscar vagas" id="botao">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

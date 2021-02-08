@@ -4,3 +4,178 @@ body {
   background-color: #3D1EA8;
   font-family: Rubik;
 }
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: url(https://i.imgur.com/UGcRQcR.jpg);
+  background-size: cover;
+  display: flex;
+  box-sizing: border-box;
+  font-family: 'Rubik', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.pronta-wrapper{
+  display: flex;
+  margin-top: 150px;    
+  width: 80%;
+  height: 400px;
+  align-items: center; 
+  justify-content: space-around;          
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  width: 50%;
+  height: 100%;
+  color: white;
+}
+
+.principal{
+  height: 40%;
+  font-family: 'Rubik';
+  font-size: 70px;
+  width: 100%;
+}
+
+.principal h1 {
+  font-weight: 500;
+  font-size: 100px;
+}
+
+.mensagem{
+  height: 20%;
+  width: 100%;        
+}
+
+h2 {
+  font-size: 36px;  
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: normal; 
+}
+
+
+.busca{
+  width: 50%;
+  height: 100%;  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.caixa-busca{
+  background-color:white;
+  border-radius: 6px;
+  height: 90%;
+  width: 100%;
+  padding: 50px;
+}
+
+
+h4 {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.textobusca p {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.texto-busca {
+  height: 25%;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  line-height: 35px;
+  color: #000000; 
+  p {
+    margin-top: -4px;
+    font-size: 13px;
+  }
+}
+
+.opcoes{   
+  padding-right: 10px;
+  padding-left: 10px;
+  height: 85%;
+  padding-top: 20px;
+  padding-bottom: 0;
+  text-align: center; 
+}
+
+label {
+  display: inline-block;  
+  box-sizing: border-box;
+  padding: 0 4px;
+  margin-bottom: 8px;
+  text-align: center;
+  cursor: pointer;    
+}
+
+/* Esconde a caixa de seleção */
+label input[type=checkbox] {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+/* Padrão dos itens */
+label span {
+  display: block;
+  background-color: #E2DDF2;
+  color: #3D3D3D;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #3D1EA8;
+  border-radius: 8px;
+  line-height: 5px;
+}
+
+/* Quando mouse passa por cima */
+label:hover span {
+  background-color: #4c369e;
+  color:  #fff;
+  box-shadow: 1px 1px 5px rgba(255,255,255,.4) inset;
+}
+
+/* Quando item selecionado */
+label input[type=checkbox]:checked + span {
+  background-color: #3D1EA8;
+  border-color: #eae6ed;
+  color: #fff;
+}
+
+.botao {
+  border: none;
+  height: 15%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#botao {
+  color: rgba(61, 30, 168, 0.5);
+  font-size: 22px;
+  font-weight: 500;
+  background: #E2DDF2;
+  padding: 10px; 
+  line-height: 26px;
+  border: none;
+  border-radius: 8px;
+}
+
+#botao:hover {
+  background-color: #4c369e;
+  color:  #fff;
+  border: 1px solid #E2DDF2;  
+}
