@@ -32,13 +32,13 @@
 <h1 id="nome-do-projeto"> Nome do projeto </h1>
 
 <p align="justify">
-  PrOnTa!
+  Pronta!
 </p>
 
 <h1 id="descrição-do-projeto">Descrição do projeto</h1>
 
 <p align="justify">
-  Projeto com o objetido de entregar uma solução, usando tecnologia para apoiar profissionais em início de carreira a conseguirem oportunidades de emprego. 
+  Projeto com o objetivo de entregar uma solução, usando tecnologia para apoiar profissionais em início de carreira a conseguirem oportunidades de emprego. 
 </p>
 <p align="justify">
   Diante desse desafio, identificamos como um problema a falta de confiança das mulheres, que muitas vezes as impedem de se candidatar à vagas (para as quais estariam aptas!). 
@@ -80,7 +80,7 @@
 
 Equipe responsável pelo desenvolvimento do projeto
 
-|  [<img src="https://avatars.githubusercontent.com/u/72107976?s=460&u=7cf8fdc51c8550fc6cdcbacd03b535e0cc262775&v=4" width=115><br><sub>Helena Oliveira - Front End</sub>](https://github.com/HELENA-HOS) | [<img src="https://avatars.githubusercontent.com/u/53658438?s=400&v=4" width=115><br><sub>Leticia Felix - Front End</sub>](https://github.com/leticiafs) |  [<img src="https://avatars.githubusercontent.com/u/61853312?s=460&u=3189de568afeef86b5f1a152ded5994d3055a103&v=4" width=115><br><sub>Bianca Ferreira - Back End</sub>](https://github.com/biancaferreiralp) | [<img src="https://media-exp1.licdn.com/dms/image/C4D03AQFZUVHmpKE-Uw/profile-displayphoto-shrink_800_800/0/1608643616292?e=1618444800&v=beta&t=ZSMb1809GD3AX_4KoSWNDazTUCm_M7Rf7R2PbPWNkwA" width=115><br><sub>Lorena Germano - UX / UI</sub>](https://www.linkedin.com/in/lagermano/) | [<img src="https://media-exp1.licdn.com/dms/image/C4D03AQEd0jpsdzUcdw/profile-displayphoto-shrink_800_800/0/1547056816302?e=1618444800&v=beta&t=QxKqRBZnOzUBQ1tDHr1SRex3XMc3lLA4lKBRdQj51JU" width=115><br><sub>Talita Arena - Produto</sub>](https://www.linkedin.com/in/talita-arena/) |
+|  [<img src="https://avatars.githubusercontent.com/u/72107976?s=460&u=7cf8fdc51c8550fc6cdcbacd03b535e0cc262775&v=4" width=115><br><sub>Helena Oliveira - Front End</sub>](https://github.com/HELENA-HOS) | [<img src="https://avatars.githubusercontent.com/u/53658438?s=400&v=4" width=115><br><sub>Leticia Felix - Front End</sub>](https://github.com/leticiafs) |  [<img src="https://avatars.githubusercontent.com/u/61853312?s=460&u=416eb4e60b8c0d4249cee9e501f695ad8c3a1cf3&v=4" width=115><br><sub>Bianca Ferreira - Back End</sub>](https://github.com/biancaferreiralp) | [<img src="https://media-exp1.licdn.com/dms/image/C4D03AQFZUVHmpKE-Uw/profile-displayphoto-shrink_800_800/0/1608643616292?e=1618444800&v=beta&t=ZSMb1809GD3AX_4KoSWNDazTUCm_M7Rf7R2PbPWNkwA" width=115><br><sub>Lorena Germano - UX / UI</sub>](https://www.linkedin.com/in/lagermano/) | [<img src="https://media-exp1.licdn.com/dms/image/C4D03AQEd0jpsdzUcdw/profile-displayphoto-shrink_800_800/0/1547056816302?e=1618444800&v=beta&t=QxKqRBZnOzUBQ1tDHr1SRex3XMc3lLA4lKBRdQj51JU" width=115><br><sub>Talita Arena - Produto</sub>](https://www.linkedin.com/in/talita-arena/) |
 | :---: | :---: | :---: | :---: | :---: 
 
 : 2021 - Pronta!
