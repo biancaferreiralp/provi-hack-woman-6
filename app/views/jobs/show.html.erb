@@ -1,14 +1,53 @@
-<h1><%= @job.title %></h1>
+<div id='background-show'>
+  <div class='barra' id='topo'>
+    <button class='buttonEditar'>
+      <%= link_to jobs_path do %>
+        <%= image_tag('arrow-left.png', id: "arrow") %>
+        <%= "Ver todas as vagas" %>
+      <% end %>
+    </button>
 
-<%= @job.user.company_name %>
-<%= @job.location %>
-<%= @job.description %>
-<% @job.requirements.each do |requirement| %>
-  <p>- <%= requirement %></p>
-<% end %>
-<%= @job.format %>
-<%= @job.modality %>
+    <%= link_to "Pronta!", root_path, class:"brand" %>
+  </div>
 
-<%= mail_to @job.user.email, "Candidatar-se a vaga" %>
+  <div id='detalhes-show'>
+    <div class='topo-show'>
+      <%= cl_image_tag @job.user.photo.key, crop: :fit, width: 200, height: 400, class: "show" %>
+      <div class='titulodiv-show'>
+        <p class='titulovaga-show'><%= @job.title %></p>
+        <p class='nomeempresa-show'><%= @job.user.company_name %> - <%= @job.location %></p>
+      </div>
+    </div>
 
-<%= link_to "Ver mais vagas", jobs_path %>
+    <div class='habilidades-show'>
+      <div class='habilidade-show'><%= @job.level %></div>
+      <div class='habilidade-show'><%= @job.format %></div>
+      <div class='habilidade-show'><%= @job.modality %></div>
+    </div>
+
+    <p id='titulodescricao-show'>Venha fazer parte do nosso time!</p>
+
+    <div id='descricaovaga-show'>
+      <p id='titulodescricao-show'>Sobre a <%= @job.user.company_name %></p>
+      <p class="pb-3 mb-3 pr-4"><%= @job.user.description %></p>
+      
+      <p id='titulodescricao-show'>Sobre a vaga de <%= @job.title %></p>
+      <p class="pb-3 mb-3 pr-4"><%= @job.description %></p>
+
+      <p id='titulodescricao-show'>Requisitos<p>
+      <ul class="pl-3 ml-1">
+        <% @job.requirements.each do |requirement| %>
+          <li class="show"><%= requirement %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="mb-5 ml-5">
+      <button id='mecandidatar-show'>
+        <%= mail_to @job.user.email do %>
+          <%= "Me candidatar" %>
+        <% end %>
+      </button>
+    </div>
+  </div>
+</div>
